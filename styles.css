@@ -1,0 +1,91 @@
+/*main list*/
+.main-list {
+	border: 1px dotted black;
+	width: 700px;
+	height: 100%;
+	margin-bottom: 20px;
+}
+.main-list h1 {
+	font-family:Arial;
+	color:black;
+	margin-left: 20px;
+}
+.product-list-container {
+	display: flex;
+	justify-content: space-between;
+	flex-direction:column;
+}
+.product-list {
+    background-color: #cecece;
+    width: 80%;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.product-list:hover {
+    background-color:#F6F6F6;
+    cursor: pointer
+}
+.product-list p {
+	margin-left: 20px;
+	font-family: Arial;
+}
+.addlist-button {
+	font-size: 20px;
+	font-family: Arial;
+	margin-left: 20px;
+	margin-top: 20px;
+	padding: 10px;
+	border: 1px solid #4CAF50;
+	background-color: #4CAF50;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer 
+}
+.addlist-button:hover {
+	border: 1px solid #6BFF60;
+	background-color: #6BFF60;
+}
+/*insert pamel*/
+.insert-panel {
+	background-color: powderblue;
+	width: 400px;
+	height: 300px;
+	font-family: Arial;
+	border: 1px solid white;
+	border-radius: 10px;
+}
+.insert-panel h1 {
+    text-align: center;
+}
+.insert-panel form {
+	width: 100%;
+}
+.inserbox-container {
+    display: flex;
+	justify-content: space-between;
+	flex-direction:column;
+}
+.insertbox {
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+#pn {
+	margin-left: 20px;
+}
+#cp{
+	margin-left: 34px;
+}
+#sp{
+	margin-left: 62px;
+}
+.insertbox input{
+	border: 1px solid white;
+	border-radius:5px;
+	height: 30px;
+	margin-left: 10px
+}
+#submit-bot {
+    margin-left: 14%;
+    width: 70%;
+}
