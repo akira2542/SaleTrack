@@ -66,7 +66,7 @@
 .insert-panel form {
 	width: 100%;
 }
-.inserbox-container {
+.insertbox-container {
     display: flex;
 	justify-content: space-between;
 	flex-direction:column;
@@ -88,7 +88,8 @@
 	border: 1px solid white;
 	border-radius:5px;
 	height: 30px;
-	margin-left: 10px
+	margin-left: 10px;
+	width:150px;
 }
 #submit-bot {
     margin-left: 14%;
@@ -97,4 +98,86 @@
 .floatright {
 float:right;
 margin-right: 20px;
+}
+
+/*productpage section*/
+
+/*productpage-display*/
+.insert-amountpanel {
+	background-color: lightgreen;
+	width: 300px;
+	height: 220px;
+	font-family: Arial;
+	border: 1px solid white;
+	border-radius: 10px;
+}
+.insert-amountpanel h1 {
+    text-align: center;
+}
+.insert-amountpanel form {
+	width: 100%;
+}
+#am {
+	margin-left: 14px;
+}
+#dt {
+    margin-left: 40px;
+}
+.addlist-button-amount {
+	font-size: 20px;
+	font-family: Arial;
+	margin-left: 20px;
+	margin-top: 20px;
+	padding: 5px;
+	border: 1px solid green;
+	background-color: green;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer 
+}
+.addlist-button-amount:hover {
+	border: 1px solid #cecece;
+	background-color: #cecece;
+}
+#add-bot {
+	width: 70%;
+	margin-left: 15%;
+	margin-top: 0px;
+}
+.insert-amountpanel h1 {
+	margin-bottom: 10px;
+}
+.bigcontainer {
+	height: 800px;
+	background-color:lightpink;
+}
+.bigcontainer h1{
+	font-family: Arial;
+	margin-left: 10px;
+	padding-top: 10px;
+	margin-bottom: 10px;
+}
+.line-1-container {
+	display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+.line-2-container {
+	display: flex;
+    justify-content: flex-start;
+}
+.text-block {
+	font-family: Arial;
+	padding: 20px;
+	margin-left: 10px;
+}
+.line-1 {
+	background-color: lightgrey;
+}
+.line-2 {
+	background-color: powderblue;
+	text-align: center;
+}
+.big {
+	font-size: 5em;
 }
