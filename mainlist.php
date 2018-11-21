@@ -1,6 +1,6 @@
 
 
-      <?php 
+      <?php
 include 'includes/dbh.inc.php';
 $sql = "SELECT * FROM products";
 $result = $conn-> query($sql);
@@ -21,8 +21,8 @@ else {
             <p>$productname<span class='floatright'>Price : $capitalprice SellingPrice  : $sellingprice </span></p>
           </a></div>";
   }
-   }                      
-      ?>        
+   }
+      ?>
     	</div>
   	    <button class='addlist-button'>
   	    	Add List

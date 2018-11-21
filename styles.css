@@ -45,7 +45,7 @@
 	background-color: #4CAF50;
 	color: white;
 	border-radius: 5px;
-	cursor: pointer 
+	cursor: pointer
 }
 .addlist-button:hover {
 	border: 1px solid #6BFF60;
@@ -133,7 +133,7 @@ margin-right: 20px;
 	background-color: green;
 	color: white;
 	border-radius: 5px;
-	cursor: pointer 
+	cursor: pointer
 }
 .addlist-button-amount:hover {
 	border: 1px solid #cecece;
@@ -163,8 +163,14 @@ margin-right: 20px;
     margin-bottom: 10px;
 }
 .line-2-container {
-	display: flex;
+ 	display: flex;
     justify-content: flex-start;
+		margin-bottom: 10px;
+}
+.line-3-container {
+ 	display: flex;
+    justify-content: flex-start;
+		margin-bottom: 10px;
 }
 .text-block {
 	font-family: Arial;
@@ -178,6 +184,14 @@ margin-right: 20px;
 	background-color: powderblue;
 	text-align: center;
 }
+.line-3 {
+	background-color: #ffffff;
+	text-align: center;
+}
 .big {
 	font-size: 5em;
+}
+.chartsize {
+	height: 500px;
+	width: 500px;
 }
