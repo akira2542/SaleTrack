@@ -148,11 +148,12 @@ margin-right: 20px;
 	margin-bottom: 10px;
 }
 .bigcontainer {
-	height: 800px;
+	height: 1000px;
 	background-color:lightpink;
 }
 .bigcontainer h1{
-	font-family: Arial;
+  font-size:60px;
+	font-family: Verdana;
 	margin-left: 10px;
 	padding-top: 10px;
 	margin-bottom: 10px;
@@ -192,6 +193,6 @@ margin-right: 20px;
 	font-size: 5em;
 }
 .chartsize {
-	height: 500px;
-	width: 500px;
+	height: 700px;
+	width: 700px;
 }
