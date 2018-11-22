@@ -8,6 +8,9 @@
   }
 	?>
  <script src="js/chart.js"></script>
+ <div class='logocontainer'>
+ <h1>SALETRACK</h1>
+ </div>
  <div class="bigcontainer">
  	<h1><?php echo $productname;?></h1>
   <div class="product-display-container">
