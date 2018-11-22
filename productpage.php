@@ -9,28 +9,29 @@
 	?>
  <script src="js/chart.js"></script>
  <div class='logocontainer'>
- <h1>SALETRACK</h1>
- </div>
+  <a href="index.php"><h1>SALETRACK</h1></a>
+  </div>
  <div class="bigcontainer">
+  <h2>Product Name</h2>
  	<h1><?php echo $productname;?></h1>
   <div class="product-display-container">
     <div class="line-1-container">
  	 <div class="text-block line-1">COST <?php echo $capitalprice;?></div>
  	 <div class="text-block line-1">PRICE <?php echo $sellingprice;?></div>
- 	 <div class="text-block line-1"><a href="index.php">CHANGE</a></div>
+ 	 <div class="text-block line-1">CHANGE</div>
 
     </div>
       <div class="line-2-container">
  	 <div class="text-block line-2">TOTAL SOLD<br><span class="big"><?php echo $totalsold;?></span></div>
  	 <div class="text-block line-2">TODAY SOLD<br><span class="big"><?php echo $todaysold;?></div>
    <div class="text-block line-2">Registered Days<br><span class="big"><?php echo $registernumber;?></div>
- 	 <div class="text-block line-2">ADD SALE<br><span class="big">+</div>
+ 	 <div class="text-block line-2 gradcolor">ADD SALE<br><span class="big">+</div>
     </div>
     <div class="line-3-container">
-      <div class="text-block line-3">OVERALL SALE<br><span class="big"><?php echo $overallSale;?>฿</span></div>
-      <div class="text-block line-3">AVERAGE SALE<br><span class="big"><?php echo $averageSale;?>฿</div>
-      <div class="text-block line-3">OVERALL PROFIT<br><span class="big"><?php echo $overallprofit;?>฿</div>
-      <div class="text-block line-3">AVERAGE PROFIT<br><span class="big"><?php echo $averageprofit;?>฿</div>
+      <div class="text-block line-3">OVERALL SALE<br><span class="lessbig"><?php echo $overallSale;?></span>Bath</div>
+      <div class="text-block line-3">AVERAGE SALE<br><span class="lessbig"><?php echo $averageSale;?></span>Bath/day</div>
+      <div class="text-block line-3">OVERALL PROFIT<br><span class="lessbig"><?php echo $overallprofit;?></span>Bath</div>
+      <div class="text-block line-3">AVERAGE PROFIT<br><span class="lessbig"><?php echo $averageprofit;?></span>Bath/day</div>
     </div>
   </div>
 

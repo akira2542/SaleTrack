@@ -7,10 +7,10 @@ var myChart = new Chart(ctx, {
             label: globalVariable.label,
             data: [globalVariable.sold6, globalVariable.sold5, globalVariable.sold4, globalVariable.sold3, globalVariable.sold2, globalVariable.sold1],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
+                'rgba(100,216,107, 0.2)',
             ],
             borderColor: [
-                'rgba(255,99,132,1)',
+                'rgba(100,216,107,1)',
             ],
             borderWidth: 2
         }]
