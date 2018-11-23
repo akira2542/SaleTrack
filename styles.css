@@ -23,6 +23,22 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	font-size: 4em;
 	text-align: center;
 }
+/*logo animations*/
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    animation:fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+
+    animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+
+    animation-duration:0.5s;
+}
+.fade-in-delayed {
+    animation-delay: 0.3s;
+}
+.fade-in-delayed2 {
+    animation-delay: 0.5s;
+}
 /*info stuff*/
 .info-container {
 	display: flex;
@@ -103,16 +119,26 @@ text-align: center;
     background: -webkit-linear-gradient(to right, #38ef7d, #11998e); 
     background: linear-gradient(to right, #38ef7d, #11998e); 
 	color: white;
-	cursor: pointer
+	cursor: pointer;
+	margin-bottom:30px;
 }
 .addlist-button:hover {
 	border: 1px solid #64d86b;
+}
+#addsale-button:hover {
+	cursor: pointer;
 }
 /*insert panel*/
 .insert-panel {
 	width: 350px;
 	font-family: sans-serif;
 	border: 1px solid #414767;
+	z-index: 1;
+    position: fixed;
+    background-color: white;
+    top: 30%;
+    left: 35%;
+    display: none;
 }
 .insert-panel h1 {
     text-align: center;
@@ -120,6 +146,8 @@ text-align: center;
     font-size: 1.5em;
     margin-top: 20px;
     margin-bottom: 10px;
+}
+#insert-panel-main {
 }
 .insert-panel form {
 	width: 100%;
@@ -157,20 +185,52 @@ text-align: center;
 float:right;
 margin-right: 20px;
 }
+/*overlays*/
+.overlay {
+	z-index: 1;
+	position:fixed;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.6;
+	left: 0;
+    top: 0;
+    display: none;
+}
+.left-overlay {
+	z-index: 1;
+	position:fixed;
+	height: 100%;
+	width: 100%;
+	left: 0;
+    top: 0;
+    opacity: 0.6;
+    background-color: black;
+    display: none;
+}
 
 /*productpage section*/
 
 /*productpage-display*/
 .insert-amountpanel {
-	background-color: lightgreen;
 	width: 300px;
 	height: 220px;
 	font-family: Arial;
 	border: 1px solid white;
-	border-radius: 10px;
+	border:1px solid #cecece;
+	background-color: white;
+	position: fixed;
+	z-index: 1;
+	top:35%;
+	left: 38%;
+	display: none;
 }
 .insert-amountpanel h1 {
     text-align: center;
+    font-weight: normal;
+    font-size: 2em;
+    margin-top: 20px;
+    bac
 }
 .insert-amountpanel form {
 	width: 100%;
@@ -187,15 +247,14 @@ margin-right: 20px;
 	margin-left: 20px;
 	margin-top: 20px;
 	padding: 5px;
-	border: 1px solid green;
-	background-color: green;
+	border: 1px solid white;
+	background: #11998e; 
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e); 
+    background: linear-gradient(to right, #38ef7d, #11998e); 
 	color: white;
-	border-radius: 5px;
 	cursor: pointer
 }
 .addlist-button-amount:hover {
-	border: 1px solid #cecece;
-	background-color: #cecece;
 }
 #add-bot {
 	width: 70%;
@@ -206,7 +265,7 @@ margin-right: 20px;
 	margin-bottom: 10px;
 }
 .bigcontainer {
-	height: 1000px;
+	height: 880px;
 }
 .bigcontainer h1{
   font-size:60px;
@@ -244,7 +303,11 @@ margin-right: 20px;
 	font-family: Helvetica;
 	padding: 20px;
 	margin-left: 10px;
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+}
+.text-block:hover {
+    border :1px solid white;
+    cursor:default;
 }
 .line-1 {
 	border: 1px solid #cecece;
@@ -265,8 +328,12 @@ margin-right: 20px;
 	font-size: 3em;
 }
 .chartsize {
-	height: 700px;
+	height: 350px;
 	width: 700px;
+	margin-left: 30px;
+	padding: 20px;
+	border:1px solid #cecece;
+
 }
 /*input stuff*/
 input[type=number]::-webkit-inner-spin-button {

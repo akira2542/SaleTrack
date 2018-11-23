@@ -2,22 +2,23 @@
  include_once 'header.php';
 ?>
 <body>
-  <div class='logocontainer'>
+  <div class='logocontainer fade-in'>
   <h1>SALETRACK</h1>
   </div>
-  <div class="info-container">
+  <div class="overlay" id="overlay">Hey This is Overlay</div>
+  <div class="info-container fade-in-delayed fade-in">
     <div class="infoimg">
       <img src="img/market.png">
     </div>
     <div class="info">
       <h1>Welcome to SaleTrack!</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <p>This handy web-app is made for small enterprenuer who want an easy way to keep track of the products they're selling. Me,the creator of this website,my self also once was a petty enterprenuer selling cheap products in small quantities find it pretty hard to keep track of everything I sell. I hope this site will be someone's life a littlebit easier!</p>
     </div>
   </div>
 <?php
  include_once 'mainlist.php';
 ?>
-    <div class="insert-panel">
+    <div class="insert-panel" id="insert-panel-main">
     	<h1>New Product</h1>
     	<form action="includes/createprod.inc.php" method="POST">
             <div class=".insertbox-container">
@@ -31,5 +32,15 @@
            <input class="addlist-button" id="submit-bot"type="submit" value="Submit" name="submit">
         </form>
     </div>
+    <script type="text/javascript">
+      $( "#mainlist-button" ).click(function() {
+          $("#overlay").slideDown(500);
+          $("#insert-panel-main").show(300);
+  })
+      $( "#overlay" ).click(function() {
+          $("#insert-panel-main").hide(300).delay(300);
+          $("#overlay").slideUp(500);
+  });
+    </script>
 </body>
 </html>
